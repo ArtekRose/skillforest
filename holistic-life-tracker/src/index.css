@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .mystic-gradient {
+    @apply bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500;
+  }
+  
+  .tarot-gradient {
+    @apply bg-gradient-to-r from-tarot-gold via-yellow-400 to-orange-400;
+  }
+  
+  .rune-gradient {
+    @apply bg-gradient-to-r from-rune-green via-green-400 to-emerald-400;
+  }
+  
+  .cosmic-gradient {
+    @apply bg-gradient-to-r from-cosmic-blue via-blue-400 to-cyan-400;
+  }
+}
